@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS Logíc | Programadora Estrella</title>
+    <!-- Aquí conectaremos fuentes bonitas y los estilos más adelante -->
+    <link rel="stylesheet" href="../css/presentacion.css">
+    <!-- Iconos (opcional, usaremos FontAwesome o Lucide más adelante) -->
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN (Fijo en la parte superior para saltar entre "páginas") -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <a href="#home" class="logo">&lt;GS Logíc&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#approach">Enfoque</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL DE LAS SECCIONES -->
+    <main>
+
+        <!-- 1. SECCIÓN: INICIO (HERO) -->
+        <section id="home" class="section-page hero-section">
+            <div class="hero-content">
+                <h1>Hola, somos <span class="highlight">GS Logíc</span></h1>
+                <h2>Software Developer</h2>
+                <p>Especialista en código eficiente, interfaces dinámicas y backend sólido.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contact" class="btn btn-secondary">¡Hablemos!</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. SECCIÓN: SOBRE MÍ -->
+<section id="about" class="section-page about-section">
+    <div class="container">
+        <h2 class="section-title">Sobre Nosotros</h2>
+        
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Empresa desarrolladora enfocada en la creación de soluciones eficientes, código altamente estructurado y libre de duplicaciones. Nos rige el equilibrio entre un backend robusto y seguro, y un frontend milimétricamente responsivo con un diseño cuidado.</p>
+            </div>
+            
+            <div class="skills-container">
+                <h3>Nuestro Stack Técnico & Dominio</h3>
+                <div class="skills-grid">
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">🐍</div>
+                        <div class="skill-info">
+                            <h4>Python & Flask</h4>
+                            <p class="skill-desc">Construcción de APIs REST eficientes, gestión de estados, lógica modular y optimización de algoritmos sin redundancias.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">⚡</div>
+                        <div class="skill-info">
+                            <h4>JavaScript (ES6+)</h4>
+                            <p class="skill-desc">Manipulación dinámica del DOM, integración de librerías avanzadas (reportes, gráficos) y asincronismo fluido.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-info">
+                            <h4>CSS3 & HTML5</h4>
+                            <p class="skill-desc">Maquetación semántica, diseño responsivo avanzado, animaciones fluidas y sistemas de diseño basados en variables limpias.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🗄️</div>
+                        <div class="skill-info">
+                            <h4>PostgreSQL / Oracle / MySQL</h4>
+                            <p class="skill-desc">Diseño de modelos relacionales, consultas complejas optimizadas, subconsultas eficientes y persistencia de datos segura.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section-page projects-section">
+    <div class="container">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="gestion">Gestión e Inventario</button>
+            <button class="filter-btn" data-filter="reportes">Automatización & Datos</button>
+            <button class="filter-btn" data-filter="finanzas">Finanzas y Pagos</button>
+        </div>
+        
+        <div class="projects-grid">
+            
+<div class="project-card" data-category="gestion">
+    <div class="project-image-wrapper">
+        <!-- Reproductor de video reemplazando la imagen fija -->
+        <video class="project-video" autoplay loop muted playsinline poster="/img/captura_sis_inventario.png">
+            <source src="videos/demostracion_inventario.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video HTML5.
+        </video>
+        <div class="project-overlay">
+            <span class="view-details-tag">Ver Demostración</span>
+        </div>
+    </div>
+    <div class="project-info">
+        <span class="project-category-label">Gestión</span>
+        <h3>Sistema de Control de Inventario Dinámico</h3>
+        <p>Optimización de stock en tiempo real con alertas automáticas de niveles bajos y lógica de transacciones sin duplicación de registros.</p>
+        <div class="tech-tags">
+            <span>Python</span><span>Flask</span><span>PostgreSQL</span>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/auxigi01/Sistema-de-Inventario.git" target="_blank" rel="noopener noreferrer" class="btn-project-link">GitHub <i class="icon-git"></i></a>
+            <a href="videos/demostracion_inventario.mp4" target="_blank" class="btn-project-link primary-link">Ver MP4</a>
+        </div>
+    </div>
+</div>
+
+<div class="project-card" data-category="reportes">
+    <div class="project-image-wrapper">
+        <!-- Reproductor de video reemplazando la imagen fija -->
+        <video class="project-video" autoplay loop muted playsinline poster="/img/captura_reporte_estadistico.png">
+            <source src="videos/demostracion_reporte.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video HTML5.
+        </video>
+        <div class="project-overlay">
+            <span class="view-details-tag">Ver Demostración</span>
+        </div>
+    </div>
+    <div class="project-info">
+        <span class="project-category-label">Reportes</span>
+        <h3>Módulo Estadístico con Gráficos e Inyección de PDF/Excel</h3>
+        <p>Procesamiento de datos complejos transformados en gráficos interactivos con descarga automatizada de reportes limpios y envío de correos programados.</p>
+        <div class="tech-tags">
+            <span>JavaScript (ES6)</span><span>jsPDF</span><span>Chart.js</span>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/auxigi01/Reportes_y_Consultas_Estadisticas.git" target="_blank" rel="noopener noreferrer" class="btn-project-link">GitHub <i class="icon-git"></i></a>
+            <a href="videos/demostracion_reporte.mp4" target="_blank" class="btn-project-link primary-link">Ver MP4</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="project-card" data-category="finanzas">
+    <div class="project-image-wrapper">
+        <!-- Reproductor de video reemplazando la imagen fija -->
+        <video class="project-video" autoplay loop muted playsinline poster="/img/captura_pasarela_pago.png">
+            <source src="videos/demostracion_pasareladepago.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video HTML5.
+        </video>
+        <div class="project-overlay">
+            <span class="view-details-tag">Ver Demostración</span>
+        </div>
+    </div>
+    <div class="project-info">
+        <span class="project-category-label">Finanzas</span>
+        <h3>Pasarela y Formularios de Pago Seguros</h3>
+        <p>Interfaz de pagos interactiva y responsiva con validaciones de tarjetas en tiempo real en el cliente y procesamiento estructurado en backend.</p>
+        <div class="tech-tags">
+            <span>Flask</span><span>Vanilla JS</span><span>CSS3 Avanzado</span>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/auxigi01/Pasarela_y_Plataforma_de_Pagos.git" target="_blank" rel="noopener noreferrer" class="btn-project-link">GitHub <i class="icon-git"></i></a>
+            <a href="videos/demostracion_pasareladepago.mp4" target="_blank" class="btn-project-link primary-link">Ver MP4</a>
+        </div>
+    </div>
+</div>
+
+<div class="project-card" data-category="consultas">
+    <div class="project-image-wrapper">
+        <!-- Reproductor de video reemplazando la imagen fija -->
+        <video class="project-video" autoplay loop muted playsinline poster="/img/captura_consulta_registros.png">
+            <source src="videos/demostracion_consulta.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video HTML5.
+        </video>
+        <div class="project-overlay">
+            <span class="view-details-tag">Ver Demostración</span>
+        </div>
+    </div>
+    <div class="project-info">
+        <span class="project-category-label">Finanzas</span>
+        <h3>Consola de Consultas Dinámicas</h3>
+        <p>Plataforma interna optimizada para la búsqueda y filtrado inteligente de registros, con módulos de actualización en cascada y visualización limpia de indicadores.</p>
+        <div class="tech-tags">
+            <span>Flask</span><span>Vanilla JS</span><span>CSS3 Avanzado</span>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/auxigi01/Reportes_y_Consultas_Estadisticas.git" target="_blank" rel="noopener noreferrer" class="btn-project-link">GitHub <i class="icon-git"></i></a>
+            <a href="videos/demostracion_consulta.mp4" target="_blank" class="btn-project-link primary-link">Ver MP4</a>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+<section id="approach" class="section-page approach-section">
+    <div class="container">
+        <h2 class="section-title">Nuestro Enfoque Técnico</h2>
+        <p class="section-subtitle-intro">
+            Fusionamos una arquitectura de software sólida y eficiente con un diseño de interfaz intuitivo, ágil y perfectamente adaptable a cualquier dispositivo portátil.
+        </p>
+        
+        <div class="approach-grid">
+            
+            <!-- Pilar 1: Diseño UI/UX & Responsividad -->
+            <div class="approach-card">
+                <div class="approach-icon">🎨</div>
+                <div class="approach-info">
+                    <h3>UI/UX & Responsividad Total</h3>
+                    <p>
+                        Diseñamos interfaces estéticamente cuidadas y fluidas mediante CSS3 semántico y limpio. Garantizamos que cada vista sea cómoda, visualmente agradable y adaptada a cualquier tamaño de pantalla o equipo portátil.
+                    </p>
+                    <ul class="approach-list">
+                        <li>Layouts totalmente adaptativos</li>
+                        <li>Experiencia de usuario fluida e intuitiva</li>
+                        <li>Interacciones y animaciones sutiles</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pilar 2: Código Limpio y Estructurado -->
+            <div class="approach-card">
+                <div class="approach-icon">⚡</div>
+                <div class="approach-info">
+                    <h3>Código Limpio & Eficiente</h3>
+                    <p>
+                        Nos enfocamos en estructurar una lógica de programación coherente, modular y sin duplicaciones de código. Priorizamos el rendimiento del sistema y la facilidad para escalar o mantener el software a largo plazo.
+                    </p>
+                    <ul class="approach-list">
+                        <li>Lógica transparente y organizada</li>
+                        <li>Cero redundancias ni código muerto</li>
+                        <li>Optimizada velocidad de respuesta</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pilar 3: Software Portable y Liviano -->
+            <div class="approach-card">
+                <div class="approach-icon">💻</div>
+                <div class="approach-info">
+                    <h3>Software Portable & Liviano</h3>
+                    <p>
+                        Desarrollamos programas y soluciones de software livianas, fáciles de desplegar y ejecutar sin fricciones en cualquier tipo de portátil o servidor local sin comprometer recursos del sistema.
+                    </p>
+                    <ul class="approach-list">
+                        <li>Bajo consumo de recursos</li>
+                        <li>Fácil manejo y configuración</li>
+                        <li>Portabilidad multiplataforma</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pilar 4: Gestión de Datos y Backend Robusto -->
+            <div class="approach-card">
+                <div class="approach-icon">🗄️</div>
+                <div class="approach-info">
+                    <h3>Backend & Gestión de Datos</h3>
+                    <p>
+                        Conectamos la interfaz con backends seguros y modelos relacionales bien diseñados. Ejecutamos consultas optimizadas y transacciones consistentes para un manejo dinámico de la información.
+                    </p>
+                    <ul class="approach-list">
+                        <li>Modelos relacionales optimizados</li>
+                        <li>APIs dinámicas y seguras</li>
+                        <li>Manejo eficiente del estado</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 5. SECCIÓN: CONTACTO (Dupla / Equipo) -->
+<section id="contact" class="section-page contact-section">
+    <div class="container">
+        <h2 class="section-title">¡Hablemos de tu Proyecto!</h2>
+        <p class="section-subtitle-intro">
+            ¿Tienes una idea en mente o buscas un equipo para desarrollar software a medida? Ponte en contacto con cualquiera de nosotros o envíanos un mensaje directo.
+        </p>
+
+        <div class="contact-grid">
+            
+            <!-- Columna 1: Tarjetas Directas de Integrantes -->
+            <div class="contact-team-info">
+                
+                <!-- Integrante 1 -->
+                <div class="team-contact-card">
+                    <div class="team-avatar">👩‍💻</div>
+                    <div class="team-details">
+                        <h3>Geanyorni González</h3>
+                        <span class="team-role">Software & Full-Stack Developer</span>
+                        <p class="team-bio">Especialista en interfaces responsivas, optimización de código y lógica eficiente sin duplicaciones. <br><b>Correo: velasquezauxiliadora9@gmail.com</b></p>
+                        <div class="team-links">
+                            <a href="https://www.linkedin.com/in/geanyornigonzalez" target="_blank" rel="noopener" class="contact-chip">💼 LinkedIn</a>
+                            <a href="https://github.com/auxigi01" target="_blank" rel="noopener" class="contact-chip">🐙 GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integrante 2 -->
+                <div class="team-contact-card">
+                    <div class="team-avatar">👨‍💻</div>
+                    <div class="team-details">
+                        <h3>Samuel Goncalves</h3>
+                        <span class="team-role">Software & Full-Stack Developerr</span>
+                        <p class="team-bio">Especialista en arquitectura backend, lógica de datos y desarrollo de soluciones integrales. <br><b>Correo: sjgr0205@gmail.com</b>
+                        </p>
+                        <div class="team-links">
+                            <a href="www.linkedin.com/in/sgjr0205" target="_blank" rel="noopener" class="contact-chip">💼 LinkedIn</a>
+                            <a href="https://github.com/sjgr0205" target="_blank" rel="noopener" class="contact-chip">🐙 GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <p></p>
+    </footer>
+
+    <!-- LÓGICA DINÁMICA -->
+    <script src="../js/presentacion.js"></script>
+</body>
+</html>
